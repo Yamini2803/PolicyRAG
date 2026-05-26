@@ -3,15 +3,6 @@ app.py  —  Policy & Process Copilot
 -------------------------------------
 This is the main entry point.  Run it with:
     streamlit run app.py
-
-WHAT STREAMLIT IS:
-  Streamlit turns a Python script into a web app automatically.
-  You don't need HTML, CSS, or JavaScript.  Everything is written in Python.
-  Every time the user interacts with a widget, Streamlit re-runs the script
-  from top to bottom — so the whole UI is rebuilt on each interaction.
-
-  st.session_state is a special dict that PERSISTS across reruns, which is how
-  we keep the chat history and the loaded models alive between messages.
 """
 
 import os
