@@ -4,12 +4,6 @@ document_loader.py
 Reads documents (TXT, PDF, Markdown) from a folder and splits them into
 smaller overlapping "chunks" that can be stored in the vector database.
 
-WHY chunks?  An LLM has a limited context window. We can't feed it 20 whole
-documents. Instead, we split each document into small pieces and only
-retrieve the few pieces that are most relevant to the user's question.
-
-WHY overlap?  If an important sentence sits at the boundary between two
-chunks, overlap ensures it appears fully in at least one chunk.
 """
 
 import os
