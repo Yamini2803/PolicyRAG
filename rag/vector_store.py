@@ -2,7 +2,6 @@
 vector_store.py
 ---------------
 Manages the ChromaDB vector database.
-
 """
 
 import logging
