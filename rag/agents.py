@@ -3,16 +3,6 @@ agents.py
 ---------
 Implements the Agentic RAG workflow using LangGraph.
 
-WHAT IS AGENTIC AI?
-  A normal chatbot just sends your question straight to an LLM and returns the
-  answer.  An *agentic* system adds a layer of *reasoning* — it decides WHAT to
-  do before doing it, can use tools, verify its own work, and retry if needed.
-
-HOW LANGGRAPH WORKS:
-  LangGraph is a library that lets you define AI workflows as a directed graph:
-    • Nodes  = individual steps (router, retriever, verifier, answer generator)
-    • Edges  = arrows connecting steps
-    • State  = a shared Python dict that every node reads from and writes to
 
 OUR GRAPH LOOKS LIKE THIS:
 
