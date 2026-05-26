@@ -3,19 +3,6 @@ vector_store.py
 ---------------
 Manages the ChromaDB vector database.
 
-HOW DOES A VECTOR DATABASE WORK?
-  Each text chunk is converted into a list of ~1500 numbers called an
-  "embedding". These numbers capture the *meaning* of the text. Chunks with
-  similar meanings will have similar numbers, so when you search, the database
-  finds chunks whose numbers are closest to the numbers of your query.
-
-WHY ChromaDB?
-  It's a free, local vector database — no cloud account, no monthly fees.
-  All data is saved to a folder on disk (chroma_db/) and reloaded on restart.
-
-HOW EMBEDDINGS ARE GENERATED:
-  We send text to OpenAI's "text-embedding-3-small" model which returns the
-  vector. This model is fast, cheap, and very accurate for semantic search.
 """
 
 import logging
